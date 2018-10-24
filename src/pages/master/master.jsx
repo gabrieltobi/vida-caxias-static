@@ -2,6 +2,8 @@ import './master.scss'
 
 import React, { Component } from 'react'
 import { ToastContainer } from 'react-toastify'
+import Helmet from 'react-helmet'
+
 import Nav from './nav/nav'
 import Footer from './footer/footer'
 
@@ -13,6 +15,7 @@ class Master extends Component {
 
         return (
             <div className='master'>
+                <Helmet defaultTitle='Vida Caxias' />
                 <Nav />
 
                 {children}

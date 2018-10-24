@@ -4,15 +4,21 @@ import React, { Component } from 'react'
 
 class Suggestions extends Component {
     suggestions = [
-        { src: 'https://picsum.photos/200/300?random', label: 'Vive Só' },
-        { src: 'https://picsum.photos/300/380?random', label: 'Depressivo' },
-        { src: 'https://picsum.photos/300/400?random', label: 'Sem Amigos' },
-        { src: 'https://picsum.photos/210/220?random', label: 'Casamento Infeliz' },
-        { src: 'https://picsum.photos/400/320?random', label: 'Doente' },
-        { src: 'https://picsum.photos/320/220?random', label: 'Desesperado' },
-        { src: 'https://picsum.photos/250/520?random', label: 'Infeliz' },
-        { src: 'https://picsum.photos/360/250?random', label: 'Não Vê Solução (Clicável)', href: 'http://novotempo.com/' },
-        { src: 'https://www.youtube.com/embed/am-XJqRU3uY', label: 'Vídeo 📹', video: true }
+        { src: 'https://www.youtube.com/embed/vI9-UJa1Pzg', label: 'Depressão' },
+        { src: 'https://www.youtube.com/embed/4yKASCB-1Ts', label: 'Casados e Infelizes (Parte 1)' },
+        { src: 'https://www.youtube.com/embed/Rpc-7aokEcQ', label: 'Casados e Infelizes (Parte 2)' },
+        { src: 'https://www.youtube.com/embed/lcEIf9Zb1d4', label: 'Casados e Infelizes' },
+        { src: 'https://www.youtube.com/embed/1ljvlZTfAFQ', label: 'Desesperado' },
+        { src: 'https://www.youtube.com/embed/0_y6ri5YWAE', label: 'Não Vê Solução (Parte 1)' },
+        { src: 'https://www.youtube.com/embed/0i8L9-2fZus', label: 'Não Vê Solução (Parte 2)' },
+        { src: 'https://www.youtube.com/embed/WgoamE_Qpwo', label: 'Não Vê Solução (Parte 3)' },
+        { src: 'https://www.youtube.com/embed/rX0_r6RA40g', label: 'Depressão' },
+        { src: 'https://www.youtube.com/embed/NGpbm-s40ro', label: 'Depressão' },
+        { src: 'https://www.youtube.com/embed/WGvfuY4JGvQ', label: 'Depressão' },
+        { src: 'https://www.youtube.com/embed/j0n6AsAqnso', label: 'Sem Amigos' },
+        { src: 'https://www.youtube.com/embed/ZAhxLGBCG8o', label: 'Sem Amigos (Parte 1)' },
+        { src: 'https://www.youtube.com/embed/KSkCJ5Lf5OU', label: 'Sem Amigos (Parte 2)' },
+        { src: 'https://www.youtube.com/embed/g1kxPA1PyKo', label: 'Saúde' }
     ]
 
     openPage = (href) => {
@@ -30,13 +36,13 @@ class Suggestions extends Component {
                         <h5>{item.label}</h5>
                         <div className='suggestion-content border border-dark position-relative'>
                             {
-                                item.video &&
+                                !item.image &&
                                 <div className='suggestion-video embed-responsive embed-responsive-16by9 h-100'>
                                     <iframe className='embed-responsive-item' src={item.src} title='Vídeo' allowFullScreen></iframe>
                                 </div>
                             }
                             {
-                                !item.video &&
+                                item.image &&
                                 <div className='suggestion-image h-100' style={{ backgroundImage: `url(${item.src})` }} />
                             }
                         </div>
