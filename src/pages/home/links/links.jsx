@@ -10,10 +10,9 @@ class Links extends Component {
     }
 
     links = [
-        { label: 'Quero uma palavra amiga' },
-        { label: 'Quero conhecer o Salvador' },
-        { label: 'Quero estudar digitalmente' },
-        { label: 'Quero falar com alguém' }
+        { label: 'Quero falar com um pastor e obter uma palavra amiga' },
+        { label: 'Gostaria que orassem comigo' },
+        { label: 'Quero estudar a bíblia e ter uma vida feliz' }
     ]
 
     renderModal = () => {
@@ -47,7 +46,7 @@ class Links extends Component {
     render() {
         return (
             <div className='links py-4 px-5'>
-                <h1 className='mb-4 text-center py-3 bg-dark text-light'>Precisa de algo?</h1>
+                <h1 className='mb-4 text-center py-3 bg-dark text-light'>Nós te ajudamos, inscreva-se:</h1>
 
                 {this.links.map(this.renderLink)}
 

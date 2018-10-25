@@ -5,6 +5,7 @@ import React, { Component } from 'react'
 import Video from './video/video'
 import Suggestions from './suggestions/suggestions'
 import Links from './links/links'
+import Cvs from './cvs/cvs'
 //import BiblicalClass from './biblicalClass/biblicalClass'
 
 class Home extends Component {
@@ -15,6 +16,7 @@ class Home extends Component {
                 <Suggestions />
                 <Video />
                 <Links />
+                <Cvs />
                 {/* <BiblicalClass /> */}
             </div>
         )

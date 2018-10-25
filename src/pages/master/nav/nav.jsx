@@ -26,16 +26,20 @@ class Nav extends Component {
 
         return (
             <nav className='navbar shadow-sm flex-column justify-content-start text-white' style={{ backgroundImage: `url(${christ})` }}>
-                <div className="phrase text-center p-3 mb-4">
+                <div className='phrase text-center p-3 mb-4'>
                     <h3 className='text-uppercase font-weight-bold m-0'>O Único Salvador</h3>
                 </div>
 
-                <div className="items d-flex align-items-start w-100 p-4 container">
-                    <div className="start">
+                <div className='items d-flex align-items-end w-100 p-4 container'>
+                    <div className='start'>
                         <JesusChrist />
                     </div>
 
-                    <div className="end">
+                    <div className='middle'>
+                        <h4 className='update-note m-0 py-1 px-2'>Atualização Semanal</h4>
+                    </div>
+
+                    <div className='end'>
                         <NumberOne />
                     </div>
                 </div>
