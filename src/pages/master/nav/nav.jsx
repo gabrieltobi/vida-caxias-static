@@ -35,10 +35,6 @@ class Nav extends Component {
                         <JesusChrist />
                     </div>
 
-                    <div className='middle'>
-                        <h4 className='update-note m-0 py-1 px-2'>Atualização Semanal</h4>
-                    </div>
-
                     <div className='end'>
                         <NumberOne />
                     </div>

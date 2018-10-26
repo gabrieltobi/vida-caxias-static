@@ -1,2 +1,32 @@
 .cvs {
+    $color-primary: #b15320;
+    .cvsFolder {
+        cursor: pointer;
+        img {
+            max-height: 60vh;
+        }
+        .hint {
+            background-color: $color-primary;
+            color: white;
+        }
+    }
+    .list-group-item {
+        &.active {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            background-color: $color-primary;
+            border-color: $color-primary;
+        }
+        &:first-child:not(.active) {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+    }
+    @media (max-width: 767.98px) {
+        .list-group-flush {
+            &:last-of-type {
+                margin-top: 1px;
+            }
+        }
+    }
 }

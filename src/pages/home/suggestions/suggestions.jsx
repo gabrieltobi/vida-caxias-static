@@ -66,7 +66,7 @@ class Suggestions extends Component {
     render() {
         return (
             <div className='suggestions py-4 px-5'>
-                <h1 className='mb-4 text-center py-3 bg-dark text-light'>Pra você que recebeu o livro e quer ajuda</h1>
+                <h1 className='mb-4 text-center py-3 px-2 bg-dark text-light'>Pra você que recebeu o livro e quer ajuda</h1>
 
                 <div className='row'>
                     {this.suggestions.map(this.renderSuggestion)}

@@ -13,9 +13,9 @@ class Home extends Component {
         return (
             <div className='view-home'>
                 {/* <Carousel /> */}
+                <Links />
                 <Suggestions />
                 <Video />
-                <Links />
                 <Cvs />
                 {/* <BiblicalClass /> */}
             </div>

@@ -2,6 +2,7 @@ import './links.scss'
 
 import React, { Component } from 'react'
 import Modal from './modal/modal'
+import ActionButton from '../../../components/actionButton/actionButton'
 
 class Links extends Component {
     state = {
@@ -31,22 +32,22 @@ class Links extends Component {
 
     renderLink = (link, index) => {
         return (
-            <button
+            <ActionButton
                 key={index}
-                className='list-group-item my-2 w-100 text-left'
+                className='my-2'
+                label={link.label}
                 onClick={() => {
                     this.setState({ modalOpen: true, modalTitle: link.label })
                     document.body.style.overflow = 'hidden'
-                }}>
-                <h3>{link.label}</h3>
-            </button>
+                }}
+            />
         )
     }
 
     render() {
         return (
             <div className='links py-4 px-5'>
-                <h1 className='mb-4 text-center py-3 bg-dark text-light'>Nós te ajudamos, inscreva-se:</h1>
+                <h1 className='mb-4 text-center py-3 px-2 bg-dark text-light'>Nós te ajudamos, inscreva-se:</h1>
 
                 {this.links.map(this.renderLink)}
 

@@ -1,0 +1,11 @@
+.modal-image {
+    $color-primary: #b15320;
+    display: block !important;
+    .modal-header {
+        background-color: $color-primary;
+        &,
+        .close {
+            color: white;
+        }
+    }
+}
