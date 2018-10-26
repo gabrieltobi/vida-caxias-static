@@ -10,9 +10,9 @@ class Footer extends Component {
                     <span className='small'>Atualização Semanal</span>
                 </div>
                 <div className='middle'>
-                    Vida Caxias ©‎ {new Date().getFullYear()}
                 </div>
                 <div className='end'>
+                    Vida Caxias ©‎ {new Date().getFullYear()}
                 </div>
             </footer >
         )
