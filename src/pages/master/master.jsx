@@ -12,8 +12,10 @@ class Master extends Component {
     constructor(props) {
         super(props)
 
-        ReactGA.initialize('UA-128597591-1')
-        ReactGA.pageview(window.location.pathname + window.location.search)
+        if (typeof window !== 'undefined') {
+            ReactGA.initialize('UA-128597591-1')
+            ReactGA.pageview(window.location.pathname + window.location.search)
+        }
     }
 
     render() {
